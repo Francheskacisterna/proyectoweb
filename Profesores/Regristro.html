@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/Logo.png">
+    <!-- Bootstrap CSS (librerias)-->
+    <title>LBWUS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Style/estilo.css">
+    <script src="../js/bootstrap.min.js"> </script>
+
+    <style>
+        body {
+            background: #a159d8;
+            background: linear-gradient(to right, #ff96ca, #c2b6f3);
+        }
+
+        .bg {
+            background-image: url(../img/prueb1.jpeg);
+            background-position: center center;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand me-auto" href="#">
+                <img src="../img/Logo.png" alt="Logo" width="50px" class="d-inline-block align-text-top">
+                LBWUS</a>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">LBWUS</h5>s
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2 active" aria-current="page" href="inicio.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="planes.html">Planes<a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="servicios.html">Servicios<a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="nosotros.html">Nosotros<a>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="contactos.html">Contactos<a>
+                        </li>
+                        </li>
+                    </ul>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#" class="registrarse-button btn btn-primary">Registrarse</a>
+            <a href="#" class="login-button">Iniciar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <!--End Navbar-->
+    
+    <div class="container w-75 bg-primary mt-5 rounded shadow">
+        <div class="row align-items-stretch">
+            <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
+                <!-- Aquí puede ir la imagen del lado izquierdo si es necesaria -->
+            </div>
+            <div class="col bg-white p-5 rounded-end">
+                <h2 class="fw-bold text-center py-5">Crear Cuenta</h2>
+
+                <!-- Formulario de registro -->
+                <form action="#" class="needs-validation d-flex flex-column align-items-center" novalidate>
+
+                    <!-- Nombre y apellidos -->
+                    <div class="mb-4 w-100">
+                        <label for="full-name" class="form-label">Nombre y Apellidos</label>
+                        <input type="text" class="form-control" id="full-name" name="full-name" required>
+                        <div class="invalid-feedback">
+                            Por favor ingresa tu nombre completo.
+                        </div>
+                    </div>
+
+                    <!-- Correo electrónico -->
+                    <div class="mb-4 w-100">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                        <div class="invalid-feedback">
+                            Por favor ingresa un correo electrónico válido.
+                        </div>
+                    </div>
+
+                    <!-- Contraseña -->
+                    <div class="mb-4 w-100">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                        <div class="invalid-feedback">
+                            La contraseña es obligatoria.
+                        </div>
+                    </div>
+
+                    <!-- Confirmar contraseña -->
+                    <div class="mb-4 w-100">
+                        <label for="confirm-password" class="form-label">Confirmar contraseña</label>
+                        <input type="password" class="form-control" id="confirm-password" name="confirm-password"
+                            required>
+                        <div class="invalid-feedback">
+                            Por favor confirma tu contraseña.
+                        </div>
+                    </div>
+
+                    <!-- Casillas de verificación -->
+                    <div class="mb-4 w-100 form-check">
+                        <input type="checkbox" class="form-check-input" id="terms" required>
+                        <label for="terms" class="form-check-label">He leído y acepto los Términos y condiciones y la
+                            Política de Privacidad</label>
+                        <div class="invalid-feedback">
+                            Debes aceptar los términos y condiciones.
+                        </div>
+                    </div>
+
+                    <div class="mb-4 w-100 form-check">
+                        <input type="checkbox" class="form-check-input" id="notifications">
+                        <label for="notifications" class="form-check-label">Me gustaría recibir notificaciones sobre
+                            productos</label>
+                    </div>
+
+                    <!-- Botón de enviar -->
+                    <div class="d-grid w-100">
+                        <button type="submit" class="btn btn-primary">Crear Cuenta</button>
+                    </div>
+
+                </form>
+
+                <!-- Enlace para iniciar sesión si ya tiene cuenta -->
+                <div class="my-3 text-center w-100">
+                    <span>¿Ya tienes cuenta? <a href="iniciar.html">Inicia sesión aquí</a></span>
+                </div>
+                <!-- Login con redes sociales -->
+                <div class="container w-100 my-5">
+                    <div class="row text-center">
+                        <div class="col-12">Iniciar Sesión</div>
+                    </div>
+                    <div class="row">
+                        <!-- Botón de Facebook -->
+                        <div class="col">
+                            <button class="btn btn-outline-primary w-100 my-1">
+                                <div class="row align-items-center">
+                                    <div class="col-2 d-none d-md-block">
+                                        <img src="../img/facebook.png" width="32px" alt="Facebook Logo">
+                                    </div>
+                                    <div class="col-12 col-md-10 text-center">
+                                        Facebook
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <!-- Botón de Google -->
+                        <div class="col">
+                            <button class="btn btn-outline-danger w-100 my-1">
+                                <div class="row align-items-center">
+                                    <div class="col-2 d-none d-md-block">
+                                        <img src="../img/google.png" width="32px" alt="Google Logo">
+                                    </div>
+                                    <div class="col-12 col-md-10 text-center">
+                                        Google
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    // Example starter JavaScript for disabling form submissions if there are invalid fields
+                    (function () {
+                        'use strict'
+
+                        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                        var forms = document.querySelectorAll('.needs-validation')
+
+                        // Loop over them and prevent submission
+                        Array.prototype.slice.call(forms)
+                            .forEach(function (form) {
+                                form.addEventListener('submit', function (event) {
+                                    if (!form.checkValidity()) {
+                                        event.preventDefault()
+                                        event.stopPropagation()
+                                    }
+
+                                    form.classList.add('was-validated')
+                                }, false)
+                            })
+                    })()
+                </script>
+
+</body>
+
+</html>
