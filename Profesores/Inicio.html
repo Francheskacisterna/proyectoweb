@@ -5,23 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../img/Logo.png">
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS (librerias)-->
+    <title>LBWUS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../Style/estilo.css">
     <script src="../js/bootstrap.min.js"> </script>
-    <title>LBWUS</title>
 </head>
 
 <body>
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand me-auto" href="#">LBWUS</a>
+            <a class="navbar-brand me-auto" href="#">
+                <img src="../img/Logo.png" alt="Logo" width="50px" class="d-inline-block align-text-top">
+                LBWUS</a>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">LBWUS</h5>
-                    <img src="../img/Logo.png" alt="logo proyecto">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">LBWUS</h5>s
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
@@ -31,8 +33,8 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mx-lg-2" href="planes.html">Planes<a>
-                        </li>
-                        <li class="nav-item">
+                         </li>
+                       <li class="nav-item">
                             <a class="nav-link mx-lg-2" href="servicios.html">Servicios<a>
                         </li>
                         <li class="nav-item">
@@ -46,6 +48,7 @@
                     </ul>
                 </div>
             </div>
+            <a href="#" class="registrarse-button btn btn-primary">Registrarse</a>
             <a href="#" class="login-button">Login</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -55,6 +58,7 @@
     </nav>
     <!--End Navbar-->
 
+    <!--Carrusel-->
     <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -66,27 +70,28 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="../img/estudiantes.png" class="d-block w-100" alt="student">
+                <img src="../img/img1.png" class="d-block w-100" alt="student">
                 <div class="carousel-caption">
                     <h5>Bienvenido a LBWUS</h5>
                     <p> Apoyado por un equipo de profesionales experimentados, <br> aquí es donde tus desafíos se
-                        transforman en victorias.
-                    </p><a href="../Profesores/servicios.html" class="btn btn-warning mt3"> Conocer más </a>
+                        transforman en victorias.<br><br>
+                    </p><a href="servicios" class="btn btn-warning mt3"> Conocer más </a>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="../img/img2.jpeg" class="d-block w-100" alt="...">
                 <div class="carousel-caption">
                     <h5>Conoce nuestros planes</h5>
-                    <p> Si estás interesado no esperes más ve el plan que más <br> se adecue a tus necesidades</p>
+                    <p> Si estás interesado no esperes más ve el plan que más <br> se adecue a tus necesidades <br><br>
+                    </p>
                     <a href="../Profesores/planes.html" class="btn btn-warning mt3"> Conocer más </a>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="../img/img5.jpeg" class="d-block w-100" alt="...">
+                <img src="../img/img3.jpeg" class="d-block w-100" alt="...">
                 <div class="carousel-caption">
                     <h5>¿Quienes somos?</h5>
-                    <p> Estás interesado en conocernos un poco más </p>
+                    <p> Estás interesado en conocernos un poco más <br><br> </p>
                     <a href="#" class="btn btn-warning mt3"> Pincha aqui </a>
 
                 </div>
@@ -102,23 +107,89 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
     </div>
-    <section id="about" class="about-section-padding">
+    <!-- fin del carrusel-->
+
+    <!--Imagen e información -->
+
+    <section id="about" class="about section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-12 col-12">
-                    <div class="about-text">
-                        <img src="../img/icono11.ico" alt="" class="img-fluid">
+                    <div class="about-img">
+                        <img src="../img/about.jpg" alt="img" class="img-fluid">
                     </div>
-
                 </div>
-
+                <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                    <h2>Learn better with us</h2>
+                    <p> En LBWUS nos preocupamos por ti, te contamos que tenemos más de 10.000 profesionales
+                        especialidados
+                        en todo el territorio nacional. Recuerda que nuestra pagina te contacta con aquellos
+                        profesionales
+                        que se encuentran más cerca de ti. ¡No sufras más! </p>
+                    <a href="nosotros.html" class="btn btn-warning"> Saber más</a>
+                </div>
             </div>
-
         </div>
-
     </section>
+    <!--Fin de la imagem-->
 
+    <!-- Servicios -->
+    <section id="services" class="services section-padding">
+        <div class="container">
+            <!-- Título y descripción de la sección -->
+            <div class="row">
+                <div class="col-12 text-center pb-5">
+                    <h2 class="text-uppercase font-weight-bold">Nuestros Servicios</h2>
+                    <p class="text-secondary">Descubre las características únicas de nuestros planes de estudio y
+                        encuentra la opción perfecta para ti.</p>
+                </div>
+            </div>
+            <!-- Tarjetas de servicios -->
+            <div class="row">
+                <!-- Tarjeta del plan Básico -->
+                <div class="col-12 col-md-4">
+                    <div class="card text-white bg-dark text-center pb-2">
+                        <div class="card-body">
+                            <i class="bi bi-star-fill"></i>
+                            <h3 class="card-title">Plan Básico</h3>
+                            <p class="lead">Conéctate con educadores destacados y explora una enseñanza básica renovada.
+                                Aprovecha la flexibilidad de clases virtuales o presenciales y empodera tu aprendizaje
+                                desde la comodidad de tu hogar.<br><br></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta del plan Medio -->
+                <div class="col-12 col-md-4">
+                    <div class="card text-white bg-dark text-center pb-2">
+                        <div class="card-body">
+                            <i class="bi bi-star-fill"></i>
+                            <h3 class="card-title">Plan Medio</h3>
+                            <p class="lead">Avanza hacia tus metas con nuestro plan intermedio, diseñado para adaptarse
+                                y responder a tus inquietudes educativas. Sea cual sea tu horario, nuestra metodología
+                                flexible se alinea con tu ritmo de vida.</p>
+                            <button class="btn btn-warning text-dark">Ver más</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta del plan Superior -->
+                <div class="col-12 col-md-4">
+                    <div class="card text-white bg-dark text-center pb-2">
+                        <div class="card-body">
+                            <i class="bi bi-star-fill"></i>
+                            <h3 class="card-title">Plan Superior</h3>
+                            <p class="lead">Alcanza la excelencia con nuestro plan superior, impartido por profesionales
+                                de renombre. Un puente hacia el éxito académico con clases online y presenciales que
+                                enriquecerán tu futuro profesional.<br><br></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fin de Tarjetas de servicios -->
 </body>
+
 </html>
 </body>
+
 </html>

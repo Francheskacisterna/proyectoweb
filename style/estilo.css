@@ -1,55 +1,68 @@
-*{
-  font-family:sans-serif;
+* {
+  font-family: sans-serif;
 }
 
-body{
-  background:f1fbff;
-}
-.section.padding{
-  padding:100px 0;
-
+body {
+  background: #f1fbff;
 }
 
-.carousel-caption h5{
-  font-family:monserrat;
-  font-size:45px;
+.section-padding {
+  padding: 100px 0;
+}
+
+.carousel-caption {
+  bottom: 100px;
+  z-index: 10; 
+}
+
+.carousel-caption h5 {
+  font-size: 40px;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-top: 20px;
+  color: #fff; 
 }
 
-.carousel-caption p{
-  width:60%;
-  margin:auto;
-  font-size:19px;
-  line-height:1.9;
-
+.carousel-caption p {
+  width: 60%;
+  margin: auto;
+  font-size: 17px;
+  line-height: 1.9;
 }
 
-.carousel-inner::before{
-  content:'';
+.carousel-inner::before {
+  content: '';
   position: absolute;
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
-  background: rgb(0,0,0,0.6);
-  z-index:1;
+  background: rgba(0, 0, 0, 0.6); 
+  z-index: 1; 
 }
+
+
 .navbar {
   background-color: #a159d8;
   height:65px;
 
 }
 .navbar-brand {
+  display: flex;
+  align-items: center;
   font-weight:500;
   color:#ffffff;
   font-size: 24px;
   transition:0.3s color;
 }
 
-.login-button {
-  background-color: #ae7ad5;
+.navbar-brand img {
+  margin-left: 10px; 
+}
+
+.registrarse-button {
+  margin-right: 10px;
+  background-color: #9c43df;
   color: #fff;
   font-size: 14px;
   padding: 8px 20px;
@@ -57,9 +70,23 @@ body{
   text-decoration: none;
   transition: 0.3s background-color;
 }
+.registrarse-button:hover {
+  background-color:#1582dc;
+}
+
+.login-button {
+  margin-right: 20px;
+  background-color: #cebcdb;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s background-color;
+}
+
 .login-button:hover {
   background-color:#15bcdc;
-
 }
 
 .navbar-toggler {
@@ -82,29 +109,500 @@ body{
   color:#000;
 }
 
-@media (min-width: 991px) {
-.nav-link::before{
-  content:"";
-  position: absolute;
-  bottom:0;
-  left:50%;
-  transform: translateX(-50%);
-  width: 0px;
-  height: 2px;
-  background-color:#15bcdc;
-  visibility: hidden;
-  transition:0.3s ease-in-out;     
+.service .card-body i{
+  font-size: 60px;
+
 }
 
-.nav-link:hover::before, .nav-link.active::before {
-  width: 100%;
-  visibility: visible;
+
+
+
+@media only scree and (min-width: 768px) and (max-width: 991px){
   
-}  
+  .carousel-caption{
+    bottom:center;
+  }
+  .carousel-caption p{
+    width:100%;
+  } 
 }
-
 
 @media only screen and (max-width:767px){
+  .navbar-nav{
+    text-align: center;
+
+  }
+  .carousel-caption{
+      bottom:125px;
+
+  }
+  .carousel.caption h5{
+      font-size:17px;
+  }
+
+  .carousel-caption a{
+      padding: 10px 15px;
+  }
+
+  .carousel-caption p{
+      width: 100%;
+      line-height:1.6;
+      line-height:12px;
+  }
+}
+* {
+  font-family: sans-serif;
+}
+
+body {
+  background: #f1fbff;
+}
+
+.section-padding {
+  padding: 100px 0;
+}
+
+.carousel-caption {
+  bottom: 100px;
+  z-index: 10; 
+}
+
+.carousel-caption h5 {
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  color: #fff; 
+}
+
+.carousel-caption p {
+  width: 60%;
+  margin: auto;
+  font-size: 17px;
+  line-height: 1.9;
+}
+
+.carousel-inner::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6); 
+  z-index: 1; 
+}
+
+
+.navbar {
+  background-color: #a159d8;
+  height:65px;
+
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-weight:500;
+  color:#ffffff;
+  font-size: 24px;
+  transition:0.3s color;
+}
+
+.navbar-brand img {
+  margin-left: 10px; 
+}
+
+.registrarse-button {
+  margin-right: 10px;
+  background-color: #9c43df;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s background-color;
+}
+.registrarse-button:hover {
+  background-color:#1582dc;
+}
+
+.login-button {
+  margin-right: 20px;
+  background-color: #cebcdb;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s background-color;
+}
+
+.login-button:hover {
+  background-color:#15bcdc;
+}
+
+.navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.nav-link {
+  color: #c3c2c2;
+  font-weight:500;
+  position: relative;
+}
+
+.nav-link:hover, .nav-link.active {
+  color:#000;
+}
+
+.service .card-body i{
+  font-size: 60px;
+
+}
+
+
+@media only scree and (min-width: 768px) and (max-width: 991px){
+  
+  .carousel-caption{
+    bottom:center;
+  }
+  .carousel-caption p{
+    width:100%;
+  } 
+}
+
+@media only screen and (max-width:767px){
+  .navbar-nav{
+    text-align: center;
+
+  }
+  .carousel-caption{
+      bottom:125px;
+
+  }
+  .carousel.caption h5{
+      font-size:17px;
+  }
+
+  .carousel-caption a{
+      padding: 10px 15px;
+  }
+
+  .carousel-caption p{
+      width: 100%;
+      line-height:1.6;
+      line-height:12px;
+  }
+}
+
+* {
+  font-family: sans-serif;
+}
+
+body {
+  background: #f1fbff;
+}
+
+.section-padding {
+  padding: 100px 0;
+}
+
+.carousel-caption {
+  bottom: 100px;
+  z-index: 10; 
+}
+
+.carousel-caption h5 {
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  color: #fff; 
+}
+
+.carousel-caption p {
+  width: 60%;
+  margin: auto;
+  font-size: 17px;
+  line-height: 1.9;
+}
+
+.carousel-inner::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6); 
+  z-index: 1; 
+}
+
+
+.navbar {
+  background-color: #a159d8;
+  height:65px;
+
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-weight:500;
+  color:#ffffff;
+  font-size: 24px;
+  transition:0.3s color;
+}
+
+.navbar-brand img {
+  margin-left: 10px; 
+}
+
+.registrarse-button {
+  margin-right: 10px;
+  background-color: #9c43df;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s background-color;
+}
+.registrarse-button:hover {
+  background-color:#1582dc;
+}
+
+.login-button {
+  margin-right: 20px;
+  background-color: #cebcdb;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s background-color;
+}
+
+.login-button:hover {
+  background-color:#15bcdc;
+}
+
+.navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.nav-link {
+  color: #c3c2c2;
+  font-weight:500;
+  position: relative;
+}
+
+.nav-link:hover, .nav-link.active {
+  color:#000;
+}
+
+.service .card-body i{
+  font-size: 60px;
+
+}
+
+
+@media only scree and (min-width: 768px) and (max-width: 991px){
+  
+  .carousel-caption{
+    bottom:center;
+  }
+  .carousel-caption p{
+    width:100%;
+  } 
+}
+* {
+  font-family: sans-serif;
+}
+
+body {
+  background: #f1fbff;
+}
+
+.section-padding {
+  padding: 100px 0;
+}
+
+.carousel-caption {
+  bottom: 100px;
+  z-index: 10; 
+}
+
+.carousel-caption h5 {
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  color: #fff; 
+}
+
+.carousel-caption p {
+  width: 60%;
+  margin: auto;
+  font-size: 17px;
+  line-height: 1.9;
+}
+
+.carousel-inner::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6); 
+  z-index: 1; 
+}
+
+
+.navbar {
+  background-color: #a159d8;
+  height:65px;
+
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-weight:500;
+  color:#ffffff;
+  font-size: 24px;
+  transition:0.3s color;
+}
+
+.navbar-brand img {
+  margin-left: 10px; 
+}
+
+.registrarse-button {
+  margin-right: 10px;
+  background-color: #9c43df;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s background-color;
+}
+.registrarse-button:hover {
+  background-color:#1582dc;
+}
+
+.login-button {
+  margin-right: 20px;
+  background-color: #cebcdb;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s background-color;
+}
+
+.login-button:hover {
+  background-color:#15bcdc;
+}
+
+.navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.nav-link {
+  color: #c3c2c2;
+  font-weight:500;
+  position: relative;
+}
+
+.nav-link:hover, .nav-link.active {
+  color:#000;
+}
+
+.service .card-body i{
+  font-size: 60px;
+
+}
+
+@media (min-width: 991px) {
+  .nav-link::before{
+      content:"";
+      position: absolute;
+      bottom:0;
+      left:50%;
+      transform: translateX(-50%);
+      width: 0px;
+      height: 2px;
+      background-color:#15bcdc;
+      visibility: hidden;
+      transition:0.3s ease-in-out;     
+  }
+  
+  .nav-link:hover::before, .nav-link.active::before {
+      width: 100%;
+      visibility: visible;
+      
+  }  
+  }
+
+@media only scree and (min-width: 768px) and (max-width: 991px){
+  
+  .carousel-caption{
+    bottom:center;
+  }
+  .carousel-caption p{
+    width:100%;
+  } 
+}
+
+@media only screen and (max-width:767px){
+  .navbar-nav{
+    text-align: center;
+
+  }
+  .carousel-caption{
+      bottom:125px;
+
+  }
+  .carousel.caption h5{
+      font-size:17px;
+  }
+
+  .carousel-caption a{
+      padding: 10px 15px;
+  }
+
+  .carousel-caption p{
+      width: 100%;
+      line-height:1.6;
+      line-height:12px;
+  }
+}
+
+@media only screen and (max-width:767px){
+  .navbar-nav{
+    text-align: center;
+
+  }
   .carousel-caption{
       bottom:125px;
 
