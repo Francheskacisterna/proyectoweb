@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/Logo.png">
+    <!-- Bootstrap CSS (librerias)-->
+    <title>LBWUS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Style/estilo.css">
+    <script src="../js/bootstrap.min.js"> </script>
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand me-auto" href="#">
+                <img src="../img/Logo.png" alt="Logo" width="50px" class="d-inline-block align-text-top">
+                LBWUS</a>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">LBWUS</h5>s
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2 active" aria-current="page" href="inicio.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="planes.html">Planes<a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="servicios.html">Servicios<a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="nosotros.html">Nosotros<a>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="contactos.html">Contactos<a>
+                        </li>
+                        </li>
+                    </ul>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="Regristro.html" class="registrarse-button btn btn-primary">Registrarse</a>
+            <a href="iniciar.htmls" class="login-button">Iniciar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <!--End Navbar-->
+    <div class="container my-5">
+        <!-- Sección de contacto -->
+        <div class="row">
+          <!-- Información de contacto -->
+          <div class="col-md-6">
+            <div class="info-form" style="padding-top: 30px;">
+            <h2>Contáctanos</h2>
+            <p>Recuerda que siempre cuentas con nuestro apoyo. Contáctanos y nos informas sobre las dudas que puedas tener con respecto a nuestros servicios.</p>
+            <div class="mb-3">
+              <a href="tel:123456789" class="d-block">
+                <i class="fa fa-phone"></i> 123-456-789
+              </a>
+              <a href="mailto:teachers@lbwus.cl" class="d-block">
+                <i class="fa fa-envelope"></i> teachers@lbwus.cl
+              </a>
+              <a href="#" class="d-block">
+                <i class="fa fa-map-marker"></i> Santiago, Chile
+              </a>
+            </div>
+          </div>
+        </div>
+
+          <!-- Formulario de contacto -->
+          <div class="col-md-6">
+            <div class="info-form" style="padding-top: 30px;">
+            <form action="#" method="post" autocomplete="off" class="needs-validation" novalidate>
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+                <div class="invalid-feedback">
+                  Por favor ingresa tu nombre.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Ingresa tu correo" required>
+                <div class="invalid-feedback">
+                  Por favor ingresa un correo electrónico válido.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="3" placeholder="Ingresa tu mensaje" required></textarea>
+                <div class="invalid-feedback">
+                  Por favor ingresa tu mensaje.
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+      <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function () {
+        'use strict'
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+          .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+              form.classList.add('was-validated')
+            }, false)
+          })
+      })()
+      </script>      
+</body>
+
+</html>

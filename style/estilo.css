@@ -1,5 +1,8 @@
 /* Estilos globales para todos los elementos HTML */
 * {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
   font-family: sans-serif; /* Fuente genérica para toda la página */
 }
 
@@ -200,6 +203,10 @@ body {
 .modal__close:hover{
   color:#F26250; /* Color de texto naranja al pasar el ratón */
   background-color:#fff; /* Fondo blanco al pasar el ratón */
+}
+
+.info-form {
+  margin-top: 100px;
 }
 
 /* Ajustes de estilo del carrusel para tablets */
