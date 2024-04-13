@@ -1,224 +1,256 @@
+/* Estilos globales para todos los elementos HTML */
 * {
-  font-family: sans-serif;
+  font-family: sans-serif; /* Fuente genérica para toda la página */
 }
 
+/* Estilos para el cuerpo de la página */
 body {
-  background: #f1fbff;
+  background: #f1fbff; /* Color de fondo claro para toda la página */
 }
 
+/* Clase para añadir padding uniforme a las secciones */
 .section-padding {
-  padding: 100px 0;
+  padding: 100px 0; /* Padding superior e inferior para secciones */
 }
 
+/* Estilos para los subtítulos dentro del carrusel */
 .carousel-caption {
-  bottom: 100px;
-  z-index: 10;
+  bottom: 100px; /* Posición desde la parte inferior del carrusel */
+  z-index: 10; /* Asegura que la capa de texto esté sobre la imagen */
 }
 
+/* Estilos para los títulos dentro del carrusel */
 .carousel-caption h5 {
-  font-size: 40px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-top: 20px;
-  color: #fff;
+  font-size: 40px; /* Tamaño grande para mayor visibilidad */
+  text-transform: uppercase; /* Texto en mayúsculas para énfasis */
+  letter-spacing: 2px; /* Espaciado entre letras para legibilidad */
+  margin-top: 20px; /* Espacio superior para separar del texto */
+  color: #fff; /* Color de texto claro para contraste con fondo oscuro */
 }
 
+/* Estilos para los párrafos dentro del carrusel */
 .carousel-caption p {
-  width: 60%;
-  margin: auto;
-  font-size: 17px;
-  line-height: 1.9;
+  width: 60%; /* Ancho limitado para el texto dentro del carrusel */
+  margin: auto; /* Centrado horizontalmente */
+  font-size: 17px; /* Tamaño de fuente estándar */
+  line-height: 1.9; /* Espacio entre líneas para legibilidad */
 }
 
+/* Fondo oscuro con transparencia para mejorar la lectura del texto del carrusel */
 .carousel-inner::before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.6); /* Color de fondo semitransparente */
   width: 100%;
   height: 100%;
-  z-index: 1;
+  z-index: 1; /* Asegura que esté detrás del texto */
 }
 
+/* Estilos para la barra de navegación */
 .navbar {
-  background-color: #a159d8;
-  height: 65px;
+  background-color: #a159d8; /* Color de fondo púrpura */
+  height: 65px; /* Altura de la barra de navegación */
 }
 
+/* Estilos para la marca o logo del sitio en la barra de navegación */
 .navbar-brand {
   display: flex;
-  align-items: center;
-  font-weight: 500;
-  color: #ffffff;
-  font-size: 24px;
-  transition: 0.3s color;
+  align-items: center; /* Centra verticalmente el contenido */
+  font-weight: 500; /* Peso de la fuente seminegrita */
+  color: #ffffff; /* Color de texto claro */
+  font-size: 24px; /* Tamaño de fuente grande para visibilidad */
+  transition: 0.3s color; /* Transición suave para cambio de color */
 }
 
+/* Estilos para la imagen del logo en la barra de navegación */
 .navbar-brand img {
-  margin-left: 10px;
+  margin-left: 10px; /* Margen a la izquierda del logo */
 }
 
-.registrarse-button,.login-button {
-  color: #fff;
-  font-size: 14px;
-  padding: 8px 20px;
-  border-radius: 50px;
-  text-decoration: none;
-  transition: 0.3s background-color;
-}
-
-.registrarse-button {
-  background-color: #9c43df;
-  margin-right: 10px;
-}
-
-.registrarse-button:hover {
-  background-color: #1582dc;
-}
-
+/* Botones de registro e inicio de sesión en la barra de navegación */
+.registrarse-button,
 .login-button {
-  background-color: #cebcdb;
-  margin-right: 20px;
+  color: #fff; /* Color de texto claro */
+  font-size: 14px; /* Tamaño pequeño de fuente */
+  padding: 8px 20px; /* Padding para dimensiones */
+  border-radius: 50px; /* Bordes redondeados */
+  text-decoration: none; /* Sin subrayado de texto */
+  transition: 0.3s background-color; /* Transición suave para cambio de color de fondo */
 }
 
+/* Botón de registro */
+.registrarse-button {
+  background-color: #9c43df; /* Color de fondo púrpura claro */
+  margin-right: 10px; /* Espacio a la derecha del botón */
+}
+
+/* Hover para botón de registro */
+.registrarse-button:hover {
+  background-color: #1582dc; /* Cambio de color de fondo al pasar el ratón */
+}
+
+/* Botón de inicio de sesión */
+.login-button {
+  background-color: #cebcdb; /* Color de fondo lila claro */
+  margin-right: 20px; /* Espacio a la derecha del botón */
+}
+
+/* Hover para botón de inicio de sesión */
 .login-button:hover {
-  background-color: #15bcdc;
+  background-color: #15bcdc; /* Cambio de color de fondo al pasar el ratón */
 }
 
+/* Estilos para el interruptor de navegación (hamburguesa en móviles) */
 .navbar-toggler {
-  border: none;
-  font-size: 1.25rem;
+  border: none; /* Sin bordes */
+  font-size: 1.25rem; /* Tamaño grande de icono */
 }
 
-.navbar-toggler:focus,.btn-close:focus {
-  box-shadow: none;
-  outline: none;
+/* Quita el borde al enfocar los interruptores de navegación y el botón de cierre */
+.navbar-toggler:focus,
+.btn-close:focus {
+  box-shadow: none; /* Sin sombra de caja */
+  outline: none; /* Sin contorno */
 }
 
+/* Estilos para los enlaces de navegación */
 .nav-link {
-  color: #c3c2c2;
-  font-weight: 500;
-  position: relative;
+  color: #c3c2c2; /* Color de texto gris claro */
+  font-weight: 500; /* Peso de fuente seminegrita */
+  position: relative; /* Posicionamiento relativo para pseudo-elementos */
 }
 
-.nav-link:hover,.nav-link.active {
-  color: #000;
+/* Hover y estado activo para los enlaces de navegación */
+.nav-link:hover,
+.nav-link.active {
+  color: #000; /* Cambio de color a negro */
 }
 
+/* Icono de estrella en las tarjetas de servicios */
 .service .card-body i {
-  font-size: 60px;
+  font-size: 60px; /* Tamaño grande del icono */
 }
 
+/* Estilos para el modal, por defecto no visible */
 .modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #111111bd;
-  display: flex;
-  opacity: 0;
-  pointer-events: none;
+  position: fixed; /* Fijo en toda la pantalla */
+  top: 0; /* Desde la parte superior de la pantalla */
+  left: 0; /* Desde el lado izquierdo de la pantalla */
+  right: 0; /* Desde el lado derecho de la pantalla */
+  bottom: 0; /* Hasta el fondo de la pantalla */
+  background-color: #111111bd; /* Fondo oscuro semitransparente para enfocar atención en el modal */
+  display: flex; /* Uso de Flexbox para centrar el contenido */
+  opacity: 0; /* Inicialmente transparente */
+  pointer-events: none; /* No interactuable inicialmente */
 }
 
+/* Clase para hacer visible el modal */
 .modal--show{
-  opacity:1;
-  pointer-events:unset;
+  opacity:1; /* Hace el modal completamente opaco */
+  pointer-events:unset; /* Hace el modal interactuable */
 }
 
+/* Contenedor interno del modal */
 .modal__container {
-  margin: auto;
-  width: 90%;
-  max-width: 600px;
-  max-height: 90%;
-  background-color: #fff;
-  border-radius: 6px;
-  padding: 3em 2.5em;
-  display:grid;
-  gap:1em;
-  place-items: center;
-  grid-auto-columns:100%;
+  margin: auto; /* Centra el modal en la pantalla */
+  width: 90%; /* Ancho del modal basado en el ancho de la pantalla */
+  max-width: 600px; /* Ancho máximo del modal */
+  max-height: 90%; /* Altura máxima del modal */
+  background-color: #fff; /* Fondo blanco para el contenido del modal */
+  border-radius: 6px; /* Bordes redondeados para estética */
+  padding: 3em 2.5em; /* Espaciado interno para el contenido */
+  display:grid; /* Uso de Grid para alinear el contenido */
+  gap:1em; /* Espaciado entre los elementos del grid */
+  place-items: center; /* Centra el contenido en el grid */
+  grid-auto-columns:100%; /* Asegura que las columnas usen todo el ancho disponible */
 }
 
+/* Estilo para el título del modal */
 .modal___title{
-  font-size: 2.5rem;
+  font-size: 2.5rem; /* Tamaño grande para el título */
 }
 
+/* Estilo para el párrafo del modal */
 .modal_paragraph{
-
-  margin-bottom: 10px;
+  margin-bottom: 10px; /* Espacio debajo del párrafo para separación */
 }
 
+/* Estilo para la imagen dentro del modal */
 .modal__img{
-  width:90%;
-  max-width: 300px;
+  width:90%; /* Ancho relativo a su contenedor */
+  max-width: 300px; /* Ancho máximo para la imagen */
 }
 
+/* Estilo para el botón de cierre del modal */
 .modal__close{
-  text-decoration: none;
-  color:#fff;
-  background-color:#F26250;
-  padding:1em 3em;
-  border: 1px solid;
-  border-radius:6px;
-  display: inline-block;
-  font-weight: 300;
-  transition: background-color .3s;
-
+  text-decoration: none; /* Sin subrayado en el texto */
+  color:#fff; /* Color de texto blanco */
+  background-color:#F26250; /* Fondo naranja para el botón */
+  padding:1em 3em; /* Espaciado interno para el botón */
+  border: 1px solid; /* Borde sólido para el botón */
+  border-radius:6px; /* Bordes redondeados para el botón */
+  display: inline-block; /* Permite aplicar márgenes y padding */
+  font-weight: 300; /* Peso de la fuente ligero */
+  transition: background-color .3s; /* Transición suave al cambiar de color */
 }
 
+/* Estilo para el hover del botón de cierre del modal */
 .modal__close:hover{
-  color:#F26250;
-  background-color:#fff;
-
+  color:#F26250; /* Color de texto naranja al pasar el ratón */
+  background-color:#fff; /* Fondo blanco al pasar el ratón */
 }
 
-
+/* Ajustes de estilo del carrusel para tablets */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .carousel-caption {
-    bottom: center;
+    bottom: center; /* Ajuste de la posición del texto del carrusel */
   }
   .carousel-caption p {
-    width: 100%;
+    width: 100%; /* Ancho completo para el texto */
   }
 }
 
+/* Ajustes de estilo para móviles */
 @media only screen and (max-width: 767px) {
   .navbar-nav {
-    text-align: center;
+    text-align: center; /* Texto centrado para la navegación */
   }
   .carousel-caption {
-    bottom: 125px;
+    bottom: 125px; /* Ajuste de la posición del texto del carrusel */
   }
   .carousel-caption h5 {
-    font-size: 17px;
+    font-size: 17px; /* Tamaño de fuente más pequeño para los títulos */
   }
   .carousel-caption a {
-    padding: 10px 15px;
+    padding: 10px 15px; /* Padding más pequeño para los botones */
   }
   .carousel-caption p {
-    width: 100%;
-    line-height: 1.6;
+    width: 100%; /* Ancho completo para el texto */
+    line-height: 1.6; /* Ajuste de la altura de línea para mejorar la legibilidad */
   }
 }
 
+/* Estilos para enlaces de navegación en escritorio */
 @media (min-width: 991px) {
   .nav-link::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0px;
-    height: 2px;
-    background-color: #15bcdc;
-    visibility: hidden;
-    transition: 0.3s ease-in-out;
+    content: ""; /* Contenido vacío para el pseudo-elemento */
+    position: absolute; /* Posición absoluta dentro de su contenedor */
+    bottom: 0; /* Al pie de su contenedor */
+    left: 50%; /* Centrado horizontalmente */
+    transform: translateX(-50%); /* Ajuste para centrar exactamente */
+    width: 0px; /* Ancho inicial */
+    height: 2px; /* Altura del subrayado */
+    background-color: #15bcdc; /* Color del subrayado */
+    visibility: hidden; /* Inicialmente oculto */
+    transition: 0.3s ease-in-out; /* Transición suave para efectos al pasar el ratón */
   }
 
-  .nav-link:hover::before,.nav-link.active::before {
-    width: 100%;
-    visibility: visible;
+  .nav-link:hover::before,
+  .nav-link.active::before {
+    width: 100%; /* Ancho completo al pasar el ratón */
+    visibility: visible; /* Hace visible el subrayado al pasar el ratón */
   }
 }
+

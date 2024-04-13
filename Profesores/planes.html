@@ -11,6 +11,31 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../Style/estilo.css">
     <script src="../js/bootstrap.min.js"> </script>
+
+    <style>
+        .section-fullscreen {
+            min-height: 100vh;
+            /* Esto asegura que la sección tenga al menos el alto de la pantalla */
+            display: flex;
+            align-items: center;
+            /* Centra el contenido verticalmente */
+            justify-content: center;
+            /* Centra el contenido horizontalmente */
+        }
+
+        .about-img {
+            max-width: 50%;
+            /* Ajusta esto según necesites */
+        }
+
+        @media (max-width: 768px) {
+            .about-img {
+                max-width: 100%;
+                margin-bottom: 20px;
+                /* Espacio entre la imagen y el texto en dispositivos móviles */
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -58,21 +83,22 @@
     </nav>
     <!--End Navbar-->
 
- <!-- Imagen -->
+    <!-- Imagen -->
 
-<div class="container-fluid px-0 my-5"> <!-- px-0 quita el padding en el eje x -->
-    <div class="row g-0"> <!-- g-0 quita el gutter (espacio entre columnas) -->
-        <div class="col-12 text-center">
-            <!-- Imagen que ocupa todo el ancho disponible -->
-            <img src="../img/uni449.png" class="img-fluid w-100" alt="Imagen completa"> <!-- La clase w-100 fuerza a la imagen a tomar el 100% del ancho de su contenedor -->
-            <div class="image-caption my-3">
-                <a href="#" class="btn btn-warning mt-3 mi-boton">Pincha aquí</a>
+    <div class="container-fluid px-0 my-5"> <!-- px-0 quita el padding en el eje x -->
+        <div class="row g-0"> <!-- g-0 quita el gutter (espacio entre columnas) -->
+            <div class="col-12 text-center">
+                <!-- Imagen que ocupa todo el ancho disponible -->
+                <img src="../img/uni449.png" class="img-fluid w-100" alt="Imagen completa">
+                <!-- La clase w-100 fuerza a la imagen a tomar el 100% del ancho de su contenedor -->
+                <div class="image-caption my-3">
+                    <a href="#" class="btn btn-warning mt-3 mi-boton">Pincha aquí</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
- <!-- fin de la Imagen -->
+    <!-- fin de la Imagen -->
 
     <section id="services" class="services section-padding">
         <div class="container">
@@ -154,13 +180,13 @@
         <div class="modal__container">
             <img src="../img/Rocket Boy.png" class="modal__img">
             <h2 class="modal__title">¡Bienvenido a nuestra sección de planes!</h2>
-            <p class="modal__paragraph"> Espero sea una buena experiencia para ti y puedas resolver cada una de tus
-                dudas, recuerda que LBWUS hace que todo sea más fácil es por ello que te dejamos nuestro contacto de
-                ayuda para que puedas orientarte mejor. +5234533321 </p>
-                <a href="planes.html" class="modal__close">Volver</a>
+            <p class="modal__paragraph"> Estamos aquí para asegurar una experiencia fluida y sin complicaciones. Si
+                tienes preguntas, te recordamos que puedes visitar nuestra sección línea de atención telefónica para ayudarte más eficientemente.
+                Explora nuestros planes y descubre cómo podemos apoyarte en tu educación. </p>
+            <a href="planes.html" class="modal__close">Volver</a>
         </div>
     </section>
-
-    ><script src="../java/main.js"></script>
+    <script src="../java/main.js"></script>
 </body>
+
 </html>
