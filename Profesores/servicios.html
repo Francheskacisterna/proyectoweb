@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="../img/Logo.png">
+        <!-- Bootstrap CSS (librerias)-->
+        <title>LBWUS</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../Style/estilo.css">
+        <script src="../js/bootstrap.min.js"> </script>
+    </head>
+    <body>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand me-auto" href="#">
+                    <img src="../img/Logo.png" alt="Logo" width="50px" class="d-inline-block align-text-top">
+                    LBWUS</a>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">LBWUS</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2 active" aria-current="page" href="inicio.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="planes.html">Planes<a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="servicios.html">Servicios<a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="nosotros.html">Nosotros<a>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="contactos.html">Contactos<a>
+                            </li>
+                            </li>
+                        </ul>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="Regristro.html" class="registrarse-button btn btn-primary">Registrarse</a>
+                <a href="iniciar.html" class="login-button">Iniciar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+        <!--End Navbar-->
+        
+        <!-- Primera sección con imagen a la izquierda y texto a la derecha -->
+<section id="about-left" class="about section-padding" style="background-image: linear-gradient(to right, #a7a7a7, #bdbdbd, #c9c9c9);">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-12">
+                <!-- Imagen a la izquierda -->
+                <div class="about-img">
+                    <img src="../img/basica.jpeg" alt="img" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-12 ps-lg-5 mt-md-5">
+                <h2>Learn better with us</h2>
+                <p>En LBWUS nos preocupamos por ti, te contamos que tenemos más de 10.000 profesionales especializados en todo el territorio nacional...</p>
+                <a href="nosotros.html" class="btn btn-warning">Saber más</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Segunda sección con imagen a la derecha y texto a la izquierda, con un gradiente de fondo diferente -->
+<section id="about-right-alt" class="about section-padding" style="background-image: linear-gradient(to left, #939393, #aeaeae, #c2c2c2);">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-12 pe-lg-5 mt-md-5">
+                <h2>Learn better with us</h2>
+                <p>Conoce más sobre nuestros servicios y cómo podemos ayudarte a alcanzar tus objetivos...</p>
+                <a href="nosotros.html" class="btn btn-warning">Saber más</a>
+            </div>
+            <div class="col-lg-6 col-md-12 col-12">
+                <!-- Imagen a la derecha -->
+                <div class="about-img">
+                    <img src=".../img/about.jpeg" alt="img" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Tercera sección, similar a la primera, con un gradiente de fondo original -->
+<section id="about-left-2" class="about section-padding" style="background-image: linear-gradient(to right, #a7a7a7, #bdbdbd, #c9c9c9);">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-12">
+                <!-- Imagen a la izquierda, como en la primera sección -->
+                <div class="about-img">
+                    <img src="../img/superior.jpeg" alt="img" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-12 ps-lg-5 mt-md-5">
+                <h2>Learn better with us</h2>
+                <p>Nuestro equipo de expertos está aquí para apoyarte en cada paso del camino...</p>
+                <a href="nosotros.html" class="btn btn-warning">Saber más</a>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
