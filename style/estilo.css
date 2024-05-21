@@ -204,10 +204,60 @@ body {
   color:#F26250; /* Color de texto naranja al pasar el ratón */
   background-color:#fff; /* Fondo blanco al pasar el ratón */
 }
-
-.info-form {
-  margin-top: 100px;
+.horario {
+  background-color: #a159d8;
+  padding: 90px;
+  font-family: 'Arial', sans-serif;
 }
+.horario h2 {
+  text-align: center;
+  color: #333;
+}
+.horario-info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 90px;
+}
+.horario-info .txt {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 23%;
+}
+.horario-info .txt h4 {
+  color: #007BFF;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.horario-info .txt p {
+  font-size: 14px;
+  color: #666;
+}
+.txt {
+  text-align: center; 
+}
+.socials {
+  display: flex; 
+  justify-content: center; 
+  gap: 10px; 
+}
+
+.socials .social {
+  margin: 5px;
+  width: 30px;
+  height: 30px;
+}
+.social img {
+  display: block; 
+  width: 50px; 
+  height: auto; 
+}
+
+
+
+
 
 /* Ajustes de estilo del carrusel para tablets */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -258,6 +308,44 @@ body {
   .nav-link.active::before {
     width: 100%; /* Ancho completo al pasar el ratón */
     visibility: visible; /* Hace visible el subrayado al pasar el ratón */
+  
   }
+  .socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    background-color: #a159d8;
+    border-radius: 10px;
 }
+.horario-info h2 {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+  .horario-txt{
+    flex-direction: column;
+  }
+
+.social {
+  display: flex; 
+  align-items: center; 
+  flex-direction: column;
+  font-size: 24px; 
+  color: #555;
+}
+
+.social:hover {
+  color: #000;
+  transition: color 0.3s;
+}
+
+
+.links h4 {
+  margin: 25px 0px 10px 0px;
+}
+}
+
+
+
 
