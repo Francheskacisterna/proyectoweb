@@ -46,8 +46,7 @@
             <a class="navbar-brand me-auto" href="#">
                 <img src="../img/Logo.png" alt="Logo" width="50px" class="d-inline-block align-text-top">
                 LBWUS</a>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasNavbarLabel">LBWUS</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -58,30 +57,32 @@
                             <a class="nav-link mx-lg-2 active" aria-current="page" href="inicio.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="planes.html">Planes<a>
+                            <a class="nav-link mx-lg-2" href="planes.html">Planes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="servicios.html">Servicios<a>
+                            <a class="nav-link mx-lg-2" href="servicios.html">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="nosotros.html">Nosotros<a>
+                            <a class="nav-link mx-lg-2" href="nosotros.html">Nosotros</a>
+                        </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="contactos.html">Contactos<a>
+                            <a class="nav-link mx-lg-2" href="contactos.html">Contactos</a>
                         </li>
-                        </li>
-                    </ul>
-                    </li>
                     </ul>
                 </div>
             </div>
-            <a href="Regristro.html" class="registrarse-button btn btn-primary">Registrarse</a>
-            <a href="iniciar.html" class="login-button">Iniciar</a>
+            <a href="registro.html" class="registrarse-button btn btn-primary">Registrarse</a>
+            <a href="iniciar.html" class="login-button btn btn-secondary">Iniciar</a>
+            <!-- Botón para cambiar el tema con iconos -->
+            <button onclick="toggleTheme()" id="theme-toggler" class="btn btn-outline-light ms-2">
+                <i class="bi bi-sun"></i>  <!-- Icono predeterminado para el tema claro -->
+            </button>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
         </div>
-    </nav>
+    </nav>    
     <!--End Navbar-->
 
     <!-- Imagen -->
@@ -177,6 +178,8 @@
             </div>
         </div>
     </section>
+
+    <!-- Inicio de modal -->
     <section class="modal">
         <div class="modal__container">
             <img src="../img/Rocket Boy.png" class="modal__img">
@@ -187,6 +190,90 @@
             <a href="planes.html" class="modal__close">Volver</a>
         </div>
     </section>
+    <!-- Fin de Modal -->
+    
+    <!-- Comienzo del footer -->
+    <footer class="footer">
+        <div class="container container-footer">
+            <div class="menu-footer">
+                <div class="contact-info">
+                    <p class="title-footer">Información de Contacto</p>
+                    <ul>
+                        <li class="infocontact">
+                            Dirección: Pacifico Norte 123 <br> Vernon Rockville, CT
+                            06066
+                        </li>
+                        <li>Teléfono: 123-456-7890</li>
+                        <li>EmaiL: teachers@lbwus.cl</li>
+                    </ul>
+                    <div class="social-icons">
+                        <span class="facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </span>
+                        <span class="twitter">
+                            <i class="fa-brands fa-twitter"></i>
+                        </span>
+                        <span class="youtube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </span>
+                        <span class="pinterest">
+                            <i class="fa-brands fa-pinterest-p"></i>
+                        </span>
+                        <span class="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="information">
+                    <p class="title-footer">Información</p>
+                    <ul class="infofo">
+                        <li><a href="#">Acerca de Nosotros</a></li>
+                        <li><a href="#">Estado de tus contrataciones</a></li>
+                        <li><a href="#">Politicas de Privacidad</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Contactános</a></li>
+                    </ul>
+                </div>
+
+                <div class="my-account">
+                    <p class="title-footer">Mi cuenta</p>
+
+                    <ul class="mi-cuenta">
+                        <li><a href="#">Mi cuenta</a></li>
+                        <li><a href="#">Historial de ordenes</a></li>
+                        <li><a href="#">Lista de deseos</a></li>
+                        <li><a href="#">Boletín</a></li>
+                        <li><a href="#">Reembolsos</a></li>
+                    </ul>
+                </div>
+
+                <div class="newsletter">
+                    <p class="title-footer">Boletín informativo</p>
+
+                    <div class="content">
+                        <p>
+                            Suscríbete a nuestros boletines ahora y mantente al
+                            día con nuevas colecciones y<br> ofertas exclusivas.
+                        </p>
+                        <input type="email" placeholder="Ingresa el correo aquí...">
+                        <button>Suscríbete</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>
+                    Desarrollando enseñanza para el mundo &copy; 2024
+                </p>
+    </footer>
+           <!--Fin del  footer-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../java/main.js"></script>
+    <script src="../java/jquery.js"></script>
+    <script
+	src="https://kit.fontawesome.com/81581fb069.js"
+	crossorigin="anonymous"
+	></script>
 </body>
 </html>
